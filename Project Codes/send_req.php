@@ -17,7 +17,7 @@
  <br><br>
 <tr><td class="lefttd" align="center">Mobile No</td><td><input type="number" name="t3"  required="required" pattern="[0-9]{10,12}" title="please enter only numbers between 10 to 12 for mobile no." /></td></tr>
 <br><br>
-<tr><td class="lefttd" align="center">Blood group:&nbsp;</td><td><input name="r1" type="radio" value="A+" checked="checked">A+&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="A-">A-&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="B+">B+&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="B-">B-&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="AB+">AB+&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="AB-">AB-&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="O+">O+&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="O-">O-&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td class="lefttd" align="center">Blood group:&nbsp;</td><td><input name="b1" type="radio" value="A+" checked="checked">A+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="A-">A-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="B+">B+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="B-">B-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="AB+">AB+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="AB-">AB-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="O+">O+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="O-">O-&nbsp;&nbsp;&nbsp;</td></tr>
 <br><br>
  <tr><td>&nbsp;</td></tr>
 <tr><td class="lefttd" align="center">E-Mail</td><td><input type="email" name="t5" required="required" /></td></tr>
@@ -85,3 +85,40 @@
 
 <?php include ('footer.php'); ?>
 </html>
+<?php
+function makeconnection()
+{
+	$cn=mysqli_connect("localhost","root","","DB name");
+	if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+  return $cn;
+}
+
+?>
+
+<?php
+if(isset($_POST["sbmt"])) 
+{
+			
+		
+	$cn=makeconnection();
+		$d=$_POST["year"]."/".$_POST["month"]."/".$_POST["day"];
+			$s="insert into requestes(name,gender,age,mobile,bgroup,email,reqdate,detail) values('" . $_POST["t1"] ."','" . $_POST["r1"] . "','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["b1"] . "','" . $_POST["t5"] . "','" . $d .  "','" .  $_POST["t7"]  ."')";
+			
+			
+	$q=mysqli_query($cn,$s);
+	mysqli_close($cn);
+	if($q>0)
+	{
+	echo "<script>alert('Record Save');</script>";
+	}
+	else
+	{echo "<script>alert('Saving Record Failed');</script>";
+	}
+		
+		}	
+	
+
+?> 

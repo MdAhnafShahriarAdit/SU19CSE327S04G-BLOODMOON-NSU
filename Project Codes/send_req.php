@@ -84,4 +84,45 @@
 
 
 <?php include ('footer.php'); ?>
+<<<<<<< Updated upstream
 </html>
+=======
+</html>
+<?php
+function makeconnection()
+{
+	$cn=mysqli_connect("localhost","root","","DB name");
+	if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+  return $cn;
+}
+
+?>
+
+<?php
+if(isset($_POST["sbmt"])) 
+{
+			
+		
+	$cn=makeconnection();
+		$d=$_POST["year"]."/".$_POST["month"]."/".$_POST["day"];
+			$s="insert into requests(name,gender,age,mobile,bgroup,email,reqdate,detail) values('" . $_POST["t1"] ."','" . $_POST["r1"] . "','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["b1"] . "','" . $_POST["t5"] . "','" . $d .  "','" .  $_POST["t7"]  ."')";
+			
+			
+	$q=mysqli_query($cn,$s);
+	mysqli_close($cn);
+	if($q>0)
+	{
+	echo "<script>alert('Record Save');</script>";
+	}
+	else
+	{echo "<script>alert('Saving Record Failed');</script>";
+	}
+		
+		}	
+	
+
+?> 
+>>>>>>> Stashed changes

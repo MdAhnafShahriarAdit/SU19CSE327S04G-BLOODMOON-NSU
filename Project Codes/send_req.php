@@ -2,22 +2,23 @@
 <html lang="en">
  <head>
  	<title>Online Blood Bank</title>
+ 	<?php include ('header.php'); ?>
  </head>
- <body>
- 	
-<?php include ('header.php'); ?>
-<p><h1 align="center">Request for blood</h1></p>
-<br><br>
-
-<tr><td class="lefttd" align="center"> Name:&nbsp;&nbsp;</td><td><input type="text" name="t1" required="required" pattern="[a-zA-Z _]{4,15}" title="please enter only character  between 4 to 15 for donor name" /></td></tr>
+ 	<div style="height:00px;">
+     <form method="post" enctype="multipart/form-data" style="width: 1519px; height: 900px; background-color:#ffffff;">
+      <div class="content"><br>
+<body>
+<h1 align="center">Request for blood</h1>
+<table width="90%" style="margin: 0 auto; border:3px solid;text-align:center">
+<tr><td class="lefttd" align="center"> Name:</td><td><input type="text" name="t1" required="required" pattern="[a-zA-Z _]{4,15}" title="please enter only character  between 4 to 15 for donor name" /></td></tr>
  <br><br>
-<tr><td class="lefttd" align="center">Gender:&nbsp;</td><td><input name="r1" type="radio" value="male" checked="checked">Male&nbsp;&nbsp;&nbsp;<input name="r1" type="radio" value="female">Female&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td class="lefttd" align="center">Gender:</td><td><input name="r1" type="radio" value="male" checked="checked">Male<input name="r1" type="radio" value="female">Female</td></tr>
  <br><br>
  <tr><td class="lefttd" align="center">Age</td><td><input type="number" name="t2" required="required" pattern="[0-9]{2,2}" title="please enter only  numbers between 2 to 2 for age" /></td></tr>
  <br><br>
 <tr><td class="lefttd" align="center">Mobile No</td><td><input type="number" name="t3"  required="required" pattern="[0-9]{10,12}" title="please enter only numbers between 10 to 12 for mobile no." /></td></tr>
 <br><br>
-<tr><td class="lefttd" align="center">Blood group:&nbsp;</td><td><input name="b1" type="radio" value="A+" checked="checked">A+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="A-">A-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="B+">B+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="B-">B-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="AB+">AB+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="AB-">AB-&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="O+">O+&nbsp;&nbsp;&nbsp;<input name="b1" type="radio" value="O-">O-&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td class="lefttd" align="center">Blood group:</td><td><input name="b1" type="radio" value="A+" checked="checked">A+<input name="b1" type="radio" value="A-">A-<input name="b1" type="radio" value="B+">B+<input name="b1" type="radio" value="B-">B-<input name="b1" type="radio" value="AB+">AB+<input name="b1" type="radio" value="AB-">AB-<input name="b1" type="radio" value="O+">O+<input name="b1" type="radio" value="O-">O-</td></tr>
 <br><br>
  <tr><td>&nbsp;</td></tr>
 <tr><td class="lefttd" align="center">E-Mail</td><td><input type="email" name="t5" required="required" /></td></tr>

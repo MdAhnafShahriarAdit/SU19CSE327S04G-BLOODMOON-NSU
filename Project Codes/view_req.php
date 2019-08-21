@@ -9,11 +9,14 @@
   <a class="navbar-brand" href="index.php" style="color: #1a1919"><h1>Online blood donation</h1></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="view_req.php" style="color: #1b0252">View Request&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="donate.php" style="color: #1b0252">Donate Blood&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="view_donation.php" style="color: #1b0252">View Donation&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="logout.php" style="color: #1b0252">Logout&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="donate_us.php" style="color: #0A122A">Donate Us&ensp;<span class="sr-only">(current)</span></a></li>
+       <a class="nav-link" href="index.php">Home &ensp;<span class="sr-only"></span></a></li>
+        <a class="nav-link" href="login.php">Log in&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="registration.php">Become a donor&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="send_req.php">Send Request for blood&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="view_req.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="search.php">Search for blood&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="contact_us.php">Contact Us&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="about_us.php">About Us&ensp;&ensp;&emsp;&emsp;<span class="sr-only">(current)</span></a></li>
       </ul>
 </div>
 </nav>

@@ -19,7 +19,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home &ensp;<span class="sr-only"></span></a></li>
         <a class="nav-link" href="login.php">Log in&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="user_reg.php">Become a donor&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="registration.php">Become a donor&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="send_req.php">Send Request for blood&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="view_req.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="search.php">Search for blood&ensp;<span class="sr-only">(current)</span></a></li>

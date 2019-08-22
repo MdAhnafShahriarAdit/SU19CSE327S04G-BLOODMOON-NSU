@@ -9,5 +9,7 @@
   text-align: center;
 }
 </style>
+
 <div class="footer">
+	<p>@ Group Blood_Moon</p>
 	</div>

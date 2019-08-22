@@ -29,3 +29,25 @@
       </tr><br><br><br>
       <tr><td></td><td><input type="submit" value="Send Us" name="sbmt" style="border:0px; background: red; width:110px; height:30px; box-shadow:5px 5px 5px black; color:#ffffff; font-weight:bold; font-size:15px;"></td></tr></table><br>
 </body>     	
+</html>
+<?php include 'footer.php'; ?>
+<?php
+if(isset($_POST["sbmt"])) 
+{
+    $cn=mysqli_connect("localhost","root","","");
+
+      $s="insert into donate_us(name,mobile,amount,t_id) values('" . $_POST["t1"] ."','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["t4"] ."')";
+      
+  $q=mysqli_query($cn,$s);
+  mysqli_close($cn);
+  if($q>0)
+  {
+  echo "<script>alert('Request send');</script>";
+  }
+  else
+  {echo "<script>alert('Sending request Failed');</script>";
+  }
+    
+    } 
+
+?>

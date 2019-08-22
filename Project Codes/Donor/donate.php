@@ -13,5 +13,27 @@
 
     <tr><td></td><td><input type="submit" value="Submit" name="sbmt" style="border:0px; background: blue; width:125px; height:40px; box-shadow:5px 5px 10px black; color:black; font-weight:bold; font-size:20px;"></td></tr></table>
 
+<?php
+if(isset($_POST["sbmt"])) 
+{
+    $cn=mysqli_connect("localhost","root","","");
 
+      $s="insert into donated(name,mobile,blood_group,req_id) values('" . $_POST["t1"] ."','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["t4"] ."')";
+      
+  $q=mysqli_query($cn,$s);
+  mysqli_close($cn);
+  if($q>0)
+  {
+  echo "<script>alert('Sending request Confermed');</script>";
+  }
+  else
+  {echo "<script>alert('Sending request Failed');</script>";
+  }
+    
+    } 
+
+?>
+
+</body>
+</html>
 <?php include 'footer.php'; ?>

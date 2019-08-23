@@ -63,7 +63,7 @@
 </div>
 </div>
 
-       
+
 </body>
 </html>
 
@@ -77,6 +77,10 @@
 .ftr-bg{
   background: #E9DCC9;
   border-top: 1px solid rgba(214, 195, 167, 0.34);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .footer{
   padding:3% 0;

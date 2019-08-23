@@ -39,6 +39,21 @@
         A serviceable Website.Its an attempt to work for humanity.If you are a donor,We appreciate you signing up online as a Donor.
         If you need blood we are happy to serve you.people get trouble for blood and sometimes its run out to dealth.We believe if you want to help someone its better to give blood and save life.
       </p>
+
+      <div class="wrap">
+<div class="h_btm">
+  <div class="header-para">
+    <img src="cpics/welcome.png"/>    
+    <p>Blood is universally recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety of conditions. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed. More than 29 million units of blood components are transfused every year.
+Donate Blood  
+Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility.
+
+We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.</p>
+  </div>  
+  
+  <div class="clear"></div>
+</div>
+</div>
       
        
 <div class="clear"></div>

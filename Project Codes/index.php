@@ -48,21 +48,23 @@
   <div class="f_nav">
     <ul>
       <li class="active"><a href="index.php">Home</a></li>      
-      <li><a href="donar.php">Donor</a></li>
-            <li><a href="login.php">log In</a></li>
-            <li><a href="aboutus.php">About</a></li>
-            <li><a href="contact.php">Contact Us</a></li>
+       <li ><a href="login.php">Log in</a></li>
+        <li ><a href="registration.php">Become a donor</a></li>
+        <li ><a href="send_req.php">Send Request for blood</a></li>
+        <li ><a href="view_req.php">View Request</a></li>
+        <li ><a href="search.php">Search for blood</a></li>
+        <li ><a href="contact_us.php">Contact Us</a></li>
+        <li ><a href="about_us.php">About Us</a></li>
       
             </ul>
   </div>
     <div class="copy">
-      <p class="title">© All Rights Reserved </p>
+      <p class="title"><br><br>©CSE327 Group Blood Moon  </p>
     </div>
   <div class="clear"></div>
 </div>
 </div>
 </div>
-
 
 </body>
 </html>

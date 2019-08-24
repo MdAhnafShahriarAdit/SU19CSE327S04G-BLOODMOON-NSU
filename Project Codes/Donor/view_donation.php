@@ -15,3 +15,15 @@
         <a class="nav-link" href="logout.php" style="color: #1b0252">Logout&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="donate_us.php" style="color: #0A122A">Donate Us&ensp;<span class="sr-only">(current)</span></a></li>
       </ul>
+      </div>
+</nav>
+<div style="height:00px;">
+     <form method="post" enctype="multipart/form-data" style="width: 1519px; height: 900px; background-color:#c3e5eb;">
+      <div class="content"><br>
+<table cellpadding="20" cellspacing="20" width="1000px" height="200px"  style="margin:auto" >
+
+   <tr><td colspan="7" align="center"></td></tr> 
+
+   <tr><td>&nbsp;</td><td>&nbsp;</td></tr>   
+   <tr style="background-color:#6247b5" align="center" class="bold">            
+             <td class="bold" align="center" style="color:#ffffff">Name</td><td align="center" style="color:#ffffff">Mobile</td><td align="center"style="color:#ffffff">Email</td><td align="center" style="color:#ffffff">Request ID</td><td align="center" style="color:#ffffff">Blood Quantity</td></tr>        

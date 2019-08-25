@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +23,7 @@
     <tr><td class="lefttd"><h6>Confirm Password:</h6></td><td><input type="password" name="t7" required="required" pattern="[a-zA-Z0-9]{5,15}" title="Confirm it again" /></td></tr><br><br>
 
     <tr><td>&nbsp;</td><td><input type="submit" value="Sign Up" name="sbmt" style="border:0px; background: red; width:125px; height:40px; box-shadow:5px 5px 10px black; color:white; font-weight:bold; font-size:20px;"></td></tr></table><br><br><br><br><br><br>
+
 </div>
 </form>
 </div>

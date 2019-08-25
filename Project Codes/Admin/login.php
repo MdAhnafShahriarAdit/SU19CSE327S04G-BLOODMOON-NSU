@@ -22,3 +22,39 @@
 
       <tr><td>&nbsp;</td><td><input type="submit" value="Log In" name="sbmt" style="border:0px; background:#2D7FDE; width:125px; height:40px;  box-shadow:2px 2px 10px black; color:#E2ECF8; font-weight:bold; font-size:20px;"></td></tr><br>
 </table>
+
+<?php include 'DBconnection.php'; ?>
+
+<?php
+
+$_SESSION['donorstatus']="";
+
+if(isset($_POST["sbmt"])) 
+{
+    
+    $cn=makeconnection();           
+
+            $s="select *from user where username='" . $_POST["t1"] . "' and pwd='" .$_POST["t2"] . "'";
+            
+    $q=mysqli_query($cn,$s);
+    $r=mysqli_num_rows($q);
+    mysqli_close($cn);
+    if($r>0)
+    {
+        $_SESSION["username"]=$_POST["t1"];
+       $_SESSION['donorstatus']="yes";
+//header("location:donor/index.php");
+echo "<script>location.replace('index2.php');</script>";
+    }
+    else
+    {
+        echo "<script>alert('Invalid User Name Or Password');</script>";
+    }
+        
+        }   
+?> 
+</form>
+</div>
+</body>             
+<?php include 'footer.php';
+</html>

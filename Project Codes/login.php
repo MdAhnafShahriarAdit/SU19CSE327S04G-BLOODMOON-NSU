@@ -20,3 +20,41 @@
 
         <font size="5" align="center">&nbsp;&nbsp;Not a donor?<a href="registration.php" style="color:red">&nbsp;Click here</a>&nbsp;to register.</font>
         <br><br>
+</div>
+</div>
+</nav>
+</body>
+</body>
+<?php include 'footer.php' ?>
+
+<?php include 'DBconnection.php'; ?>
+
+<?php
+
+$_SESSION['donorstatus']="";
+
+if(isset($_POST["sbmt"])) 
+{
+    
+    $cn=makeconnection();           
+
+            $s="select *from donorregistration where email='" . $_POST["t1"] . "' and pwd='" .$_POST["t2"] . "'";
+            
+    $q=mysqli_query($cn,$s);
+    $r=mysqli_num_rows($q);
+    mysqli_close($cn);
+    if($r>0)
+    {
+        $_SESSION["email"]=$_POST["t1"];
+       $_SESSION['donorstatus']="yes";
+//header("location:donor/index.php");
+echo "<script>location.replace('Donor/index.php');</script>";
+    }
+    else
+    {
+        echo "<script>alert('Invalid User Name Or Password');</script>";
+    }
+        
+        }   
+?> 
+</html>

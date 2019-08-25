@@ -28,3 +28,27 @@
 </nav>
 </body>
 </body>
+<?php include 'footer.php' ?>
+
+<?php include 'DBconnection.php'; ?>
+
+<?php
+if(isset($_POST["sbmt"])) 
+{
+        $cn=makeconnection();
+            $s="insert into donorregistration(name,gender,age,bgroup,mobile,address,email,pwd) values('" . $_POST["t1"] ."','" . $_POST["r1"] . "','" . $_POST["t2"] . "','" . $_POST["b1"] . "','" . $_POST["t3"] . "','" . $_POST["t4"] . "','" . $_POST["t5"] . "','" . $_POST["t7"] ."')";
+    
+    $q=mysqli_query($cn,$s);
+    mysqli_close($cn);
+    if($q>0)
+  {
+  echo "<script>alert('Record Save');</script>";
+  }
+  else
+  {echo "<script>alert('Saving Record Failed');</script>";
+  }
+    
+    } 
+
+?> 
+</html>

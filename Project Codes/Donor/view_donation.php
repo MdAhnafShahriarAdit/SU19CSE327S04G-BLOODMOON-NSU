@@ -16,7 +16,7 @@
              <td class="bold" align="center" style="color:#ffffff">Name</td><td align="center" style="color:#ffffff">Mobile</td><td align="center"style="color:#ffffff">Email</td><td align="center" style="color:#ffffff">Request ID</td><td align="center" style="color:#ffffff">Blood Quantity</td></tr>        
 <?php
 
-$cn=mysqli_connect("localhost","root","test",);
+$cn=mysqli_connect("localhost","root","","test");
 $s="select * from donated";
   $result=mysqli_query($cn,$s);
   $r=mysqli_num_rows($result);

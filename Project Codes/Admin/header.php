@@ -10,6 +10,7 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="add_user.php">Add User&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="view_user.php">View User&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="remove_user.php">Remove User&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="view_donation.php">View Donation&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="view_request.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>

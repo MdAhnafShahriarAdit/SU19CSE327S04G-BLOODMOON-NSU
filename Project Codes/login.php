@@ -1,83 +1,60 @@
-<!Doctype html>
+
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Online Blood Bank</title>
+    <title>Login</title>
+
+    
+    <?php include 'header.php'; ?>
+
   </head>
+  
+  <div style="height:00px;">
+     <form method="post" enctype="multipart/form-data" style="width: 1519px; height: 600px;">
+      <div class="content">
+        <br>
+      <table width="100%" style="margin: 0 auto; border:3px solid;text-align:center">
 
-   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php"><div class="logo">
-      <h1><a href="index.php"><img src="img/1lo.jpg" height="150" width="150" ; alt=""></a></h1>
-    </div></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <tr><td class="lefttd"><h3>E-Mail:</h3></td><td><input type="email" name="t1" required="required" title="Please enter your email"/></td></tr>
+      <tr><td class="lefttd"><h3>Password:</h3></td><td><input type="password"name="t2"  required="required" pattern="[a-zA-Z0-9]{2,10}" title="please enter only character or numbers between 2 to 10 for password"  /></td></tr>
 
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home &ensp;<span class="sr-only"></span></a></li>
-        <a class="nav-link" href="login.php">Log in&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="registration.php">Become a donor&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="send_req.php">Send Request for blood&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="view_req.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="search.php">Search for blood&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="contact_us.php">Contact Us&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="about_us.php">About Us&ensp;&ensp;&emsp;&emsp;<span class="sr-only">(current)</span></a></li>
-      </ul>
+        <font size="5" align="center">&nbsp;&nbsp;Not a donor?<a href="registration.php" style="color:red">&nbsp;Click here</a>&nbsp;to register.</font>
+        <br><br>
+</div>
 </div>
 </nav>
-    <body>
-        
-
-    <div class="header">
-    <div class="logo">
-              <h1><a href="index.php"><img src="Image/2.jpg" alt=""></a></h1>
-            
-            </div>
-  </div>
-
-    
-
-<div class="container">
-    
-
-
-    <div class="header">
-        <h2>Log In</h2>
-    </div>
-
-    <form action="registration.php" method="post">
-        <center><img src="img/l2.png" alt="#" class="l1"></center>
-        
-        <div class="input-group">
-            <label for="username">User Name : </label>
-            <input type="text" name="username" required>
-        </div>
-
-       
-
-         <div class="input-group">
-            <label for="password">Password : </label>
-            <input type="password" name="password_1" required>
-        </div>
-
-         
-
-         
-
-        <div class="input-group">
-    <button type="submit" class="btn" name="login_user">Log In</button>
-        </div>
-
-        <p>Already a user <a href="registration.php"><b>Register Here</b></a></p>
-
-    </form>
-
-</div>
-
-
 </body>
+</body>
+<?php include 'footer.php' ?>
+
+<?php include 'DBconnection.php'; ?>
+
+<?php
+
+$_SESSION['donorstatus']="";
+
+if(isset($_POST["sbmt"])) 
+{
+    
+    $cn=makeconnection();           
+
+            $s="select *from donorregistration where email='" . $_POST["t1"] . "' and pwd='" .$_POST["t2"] . "'";
+            
+    $q=mysqli_query($cn,$s);
+    $r=mysqli_num_rows($q);
+    mysqli_close($cn);
+    if($r>0)
+    {
+        $_SESSION["email"]=$_POST["t1"];
+       $_SESSION['donorstatus']="yes";
+//header("location:donor/index.php");
+echo "<script>location.replace('Donor/index.php');</script>";
+    }
+    else
+    {
+        echo "<script>alert('Invalid User Name Or Password');</script>";
+    }
+        
+        }   
+?> 
 </html>

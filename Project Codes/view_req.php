@@ -33,7 +33,7 @@
         </tr>
         <?php
 
-$cn=mysqli_connect("localhost","root","",);
+$cn=mysqli_connect("localhost","root","test");
 $s="select * from requests";
   $result=mysqli_query($cn,$s);
   $r=mysqli_num_rows($result);

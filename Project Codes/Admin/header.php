@@ -13,7 +13,7 @@
         <a class="nav-link" href="view_user.php">View User&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="remove_user.php">Remove User&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="view_donation.php">View Donation&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="view_request.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
+        <a class="nav-link" href="view_req.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="remove_request.php">Remove Request&ensp;<span class="sr-only">(current)</span></a></li>
         <a class="nav-link" href="logout.php">Logout&ensp;<span class="sr-only">(current)</span></a></li>
       </ul>

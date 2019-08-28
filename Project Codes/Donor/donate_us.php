@@ -34,7 +34,7 @@
 <?php
 if(isset($_POST["sbmt"])) 
 {
-    $cn=mysqli_connect("localhost","root","","");
+    $cn=mysqli_connect("localhost","root","","test");
 
       $s="insert into donate_us(name,mobile,amount,t_id) values('" . $_POST["t1"] ."','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["t4"] ."')";
       

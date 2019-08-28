@@ -12,7 +12,8 @@
 <div class="footer">
   <div class="f_nav">
     <ul>
-      <li class="active"><a href="index.php">Home</a></li>      
+      <li class="active"><a href="index.php">Home</a></li>
+      <li ><a href="Facts.php">Facts About Blood Donation</a></li>      
        <li ><a href="login.php">Log in</a></li>
         <li ><a href="registration.php">Become a donor</a></li>
         <li ><a href="send_req.php">Send Request for blood</a></li>
@@ -36,9 +37,9 @@
 
 <style>
   .ftr-bg{
-  background: #E9DCC9;
+  background: #FFFFFF;
   border-top: 1px solid rgba(214, 195, 167, 0.34);
-   position: fixed;
+  position: ;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -89,3 +90,5 @@
 }
 
 </style>
+
+

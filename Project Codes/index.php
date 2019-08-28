@@ -2,152 +2,143 @@
 <html lang="en">
   <head>
     <title>Online Blood Bank</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
   </head>
 
-   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php"><div class="logo">
-      <h1><a href="index.php"><img src="img/1lo.jpg" height="150" width="150" ; alt=""></a></h1>
-    </div></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <?php
+   include "header.php";
 
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  ?>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home &ensp;<span class="sr-only"></span></a></li>
-        <a class="nav-link" href="login.php">Log in&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="registration.php">Become a donor&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="send_req.php">Send Request for blood&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="view_req.php">View Request&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="search.php">Search for blood&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="contact_us.php">Contact Us&ensp;<span class="sr-only">(current)</span></a></li>
-        <a class="nav-link" href="about_us.php">About Us&ensp;&ensp;&emsp;&emsp;<span class="sr-only">(current)</span></a></li>
-      </ul>
-</div>
-</nav>
-    <body>
-       
+<!-- Header Area End -->
+
+<div class="container">
+<div>
   
-      <h1><span class="bold">About Our Organisation</span></h1><br><br>
-      
-    <p> 
-      Welcome to our online blood bank system.Our Website is Completely non-profit, non-political and
-        A serviceable Website.Its an attempt to work for humanity.If you are a donor,We appreciate you signing up online as a Donor.
-        If you need blood we are happy to serve you.people get trouble for blood and sometimes its run out to dealth.We believe if you want to help someone its better to give blood and save life.
-      </p>
+  <p>
+    <img src="img/intro.jpg" height="800" width="1300" alt="">
+  </p>
 
-      <div class="wrap">
-<div class="h_btm">
-  <div class="header-para">
-    <img src="cpics/welcome.png"/>    
-    <p>Blood is universally recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety of conditions. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed. More than 29 million units of blood components are transfused every year.
-Donate Blood  
-Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility.
+</div>
 
-We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.</p>
-  </div>  
-  
-  <div class="clear"></div>
-</div>
-</div>
-      
-       
-<div class="clear"></div>
-<div class="ftr-bg">
-<div class="wrap">
-<div class="footer">
-  <div class="f_nav">
-    <ul>
-      <li class="active"><a href="index.php">Home</a></li>      
-       <li ><a href="login.php">Log in</a></li>
-        <li ><a href="registration.php">Become a donor</a></li>
-        <li ><a href="send_req.php">Send Request for blood</a></li>
-        <li ><a href="view_req.php">View Request</a></li>
-        <li ><a href="search.php">Search for blood</a></li>
-        <li ><a href="contact_us.php">Contact Us</a></li>
-        <li ><a href="about_us.php">About Us</a></li>
-      
-            </ul>
+          <div class="header-content">
+            <h2> Online Blood bank </h2>
+            <p>
+            Our mission is to seamlessly elevate women’s health by leveraging the essential need for period tracking. 
+          </div>
+     
   </div>
-    <div class="copy">
-      <p class="title"><br><br>©CSE327 Group Blood Moon  </p>
+</div>
+ 
+<!--Banner-->
+    <div class="banner">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+              <div class="text-border">
+                <h2 class="text-dec">Welcome To OOnline Blood Bank</h2>
+              </div>
+              <div class="intro-para text-center quote">
+                <p class="big-text">"Tears of a mother cannot save her child but your blood can "
+ </p>
+                <p class="small-text">― Sofka Zinovieff, Putney</p>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <div class="clear"></div>
-</div>
-</div>
-</div>
+    <!--/ Banner-->
 
-</body>
+
+<!-- Deatils start -->
+
+<div class="who_why">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="who_why_title">
+          <img src="Image/1stepsolution.png" alt="">
+          <h2>One-stop solution</h2>
+        </div>
+        <div class="who_why_content">
+          <p>
+
+
+By belief that we are the obedient of nature and we abide to follow the nature rules and regulations, that humans are necessity of each other and no one can ignore that all are related with blood relations, no matter what the caste and category is. By the same way we are providing the basic and most important things to the civilization which is “BLOOD”. It means we are is the median of receiver and the donor. 
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Who and Why area end -->
+
+<!-- Feature start -->
+
+  <div class="feature-area">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-12"> -->
+          <div class="col-md-4">
+            <div class="single-feature-box">
+              <img src="img/peopleCount.png" alt="">
+              <h4>Get more people involved</h4>
+              <p>To get things done in an organization, you need to bring both perspectives to bear on your thinking.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-feature-box">
+              <img src="img/evidenceBasedApproch.png" alt="">
+              <h4>
+             Inspire more</h4>
+              <p>we are making the world a little brighter of blood where any one can come to help to other person.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-feature-box">
+              <img src="img/1stepsolution.png" alt="">
+              <h4>
+ Raise more</h4>
+              <p>we want to raise this thinking just because of no one dies for blood .</p>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+<!-- Feature end -->
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <script defer src="js/fontawesome-all.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+
+
+
+
+  <?php include('footer.php'); ?>
+
+
+
+
+
+
+  </body>
 </html>
 
-
-
-
-
-
-<style>
-  
-.ftr-bg{
-  background: #E9DCC9;
-  border-top: 1px solid rgba(214, 195, 167, 0.34);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-.footer{
-  padding:3% 0;
-}
-.f_nav{
-  float:left;
-}
-.f_nav li{
-  display: inline-block;
-}
-.f_nav li.active a{
-  color:#ffffff;
-  background: rgb(219,60,76);
-  background: -moz-linear-gradient(top,  rgba(219,60,76,1) 0%, rgba(197,54,68,1) 56%, rgba(162,44,56,1) 99%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,60,76,1)), color-stop(56%,rgba(197,54,68,1)), color-stop(99%,rgba(162,44,56,1)));
-  background: -webkit-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: -o-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: -ms-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: linear-gradient(to bottom,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3c4c', endColorstr='#a22c38',GradientType=0 );
-}
-.f_nav li a{
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  display:block;
-  padding: 8px 18px;
-  color: #805752;
-  font-size: 0.8125em;
-}
-.f_nav li a:hover{
-  color:#ffffff;
-  background: rgb(219,60,76);
-  background: -moz-linear-gradient(top,  rgba(219,60,76,1) 0%, rgba(197,54,68,1) 56%, rgba(162,44,56,1) 99%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,60,76,1)), color-stop(56%,rgba(197,54,68,1)), color-stop(99%,rgba(162,44,56,1)));
-  background: -webkit-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: -o-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: -ms-linear-gradient(top,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  background: linear-gradient(to bottom,  rgba(219,60,76,1) 0%,rgba(197,54,68,1) 56%,rgba(162,44,56,1) 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3c4c', endColorstr='#a22c38',GradientType=0 );
-  -webkit-transition: 0.9s;
-  -moz-transition: 0.9s;
-  -o-transition: 0.9s;
-}
-
-
-
-
-
-
-
-</style>

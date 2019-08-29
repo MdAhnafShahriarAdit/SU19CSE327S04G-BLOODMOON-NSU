@@ -177,7 +177,7 @@ if(isset($_POST["sbmt"]))
 		}	
 
 
-
+?>
 
 <style>
   

@@ -32,7 +32,7 @@
          </div>
         
 
-
+<?php include 'DBconnection.php'; ?>
 <?php
 if(isset($_POST["sbmt"])) 
 {

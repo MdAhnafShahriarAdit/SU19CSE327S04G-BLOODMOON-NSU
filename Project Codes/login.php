@@ -64,7 +64,7 @@ if(isset($_POST["sbmt"]))
         $_SESSION["email"]=$_POST["t1"];
        $_SESSION['donorstatus']="yes";
 //header("location:donor/index.php");
-echo "<script>location.replace('index.php');</script>";
+echo "<script>location.replace('Donor/index.php');</script>";
     }
     else
     {
